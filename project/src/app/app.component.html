@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">Itaú Gastos Cartão</mat-toolbar>
+<mat-tab-group>
+    <mat-tab label="Listal Geral">
+        <app-lancamentos [data]="itemsDespesas"> </app-lancamentos>
+    </mat-tab>
+    <mat-tab label="Por mês">
+        <app-consolidados [data]="itemsDespesas">
+        </app-consolidados>
+    </mat-tab>
+    <mat-tab label="Por Categoria">
+        <app-categorias [data]="itemsDespesas">
+        </app-categorias>
+    </mat-tab>
+</mat-tab-group>

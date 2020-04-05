@@ -1,0 +1,10 @@
+<mat-list *ngFor="let item of itemsDespesas">
+    <mat-list-item>
+        {{ formatValue(item.valor) }}
+        <br> {{ item.origem }}
+    </mat-list-item>
+</mat-list>
+
+<div *ngIf="itemsDespesas.length <= 0">
+    <h4>Não há dados a serem exibidos</h4>
+</div>

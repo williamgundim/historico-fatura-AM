@@ -1,0 +1,10 @@
+<mat-list *ngFor="let item of totalMonths">
+    <mat-list-item>
+        {{ formatValue(item.valor) }}
+        <br> {{ formatMonth(item.mes) }}
+    </mat-list-item>
+</mat-list>
+
+<div *ngIf="totalMonths.length <= 0">
+    <h4>Não há dados a serem exibidos</h4>
+</div>
